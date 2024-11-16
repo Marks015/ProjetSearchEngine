@@ -1,35 +1,37 @@
-# Project 2024
+### README: Setup Instructions
 
-The main goal of this project is to create a search engine.
-You will found 2~000 documents from french wikipedia, with 50 queries.
+Follow these steps to set up and run the project:
 
-## Work to do
+1. **Create a Virtual Environment**  
+   Open a terminal in the project directory and run:  
+   ```bash
+   python -m venv .venv
+   ```
 
-Code and create a search engine (index and reverse index) the matching model (between a query and documents).
-You can use classical TF-iDF approache, vector approaches, or combine both of them.
+2. **Activate the Virtual Environment**  
+   - On Windows:  
+     ```bash
+     .venv\Scripts\activate
+     ```  
+   - On macOS/Linux:  
+     ```bash
+     source .venv/bin/activate
+     ```
 
-It is forbidden to use frameworks such as ElasticSearch, Vespa, etc. You need to code your own search engine.
+3. **Install Required Dependencies**  
+   Run the following command to install all required libraries:  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Data provided
+4. **Run the Project**  
+   Execute the main script to launch the search engine:  
+   ```bash
+   python main.py
+   ```  
 
-There is a set of queries in the ```requetes.jsonl``` file, which is a json-line file type. There is one query per line like this:
-```{"Answer file": "wiki_042186.txt", "Queries": ["course à pied", "trail"]}```
-Each query correspond to an answer file, this means when you perform a query, you should have as answer the right file.
-All data files are in a set of documents stored in the follolwing zip file : ```wiki_split_extract_2k.zip```.
+### Authors  
+- **Mark Salloum**  
+- **Galust Buniatyan**
 
-
-
-## Things to send back
-
-At the end of the project, you will send me by email a report that contains :
-
-- A report explaining what you have done (≃ 5-10 pages + references)
-- I want you to write a report. This also means you have to put your name on it and to do an effort of presentation! ;-)
-- upload the report in teams before the deadline (github / gitlab accepted)
-- No Jupiternote !!!
-- ready-to-work script (in python or demonstration) (github / gitlab accepted)
-- a link to download the model if you created one (github / gitlab accepted)
-- 1 report per group (do not upload one report per student)
-- If you send me your report lately, you will be penalised
-- Plagianism equal to zero
-- No report equal to zero
+You're all set! 🚀
